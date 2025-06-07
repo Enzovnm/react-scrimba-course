@@ -1,8 +1,7 @@
 import { createRoot } from "react-dom/client";
-import { createElement } from "react";
 import "./index.css";
 
-const reactElement = createElement("h1", null, createElement("span", null, "I'm inside span"));
+const reactElement = <h1><span></span></h1>
 
 console.log(reactElement)
 createRoot(document.getElementById("root")).render(
